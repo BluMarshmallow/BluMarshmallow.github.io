@@ -1,0 +1,37 @@
+body {
+    background: #f9f9fa;
+    
+}
+
+.search {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #718093;
+    color: #7f8fa6;
+}
+
+.search:focus {
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.searchicon {
+    max-height: 39px;
+}
+
+h4 {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #7a8b94;
+}
+
+ul {
+    list-style: none;
+    margin-left: 15px;
+}
+
+a {
+    color: #717883;
+    font-family: "Lucida Console", Monaco, monospace;
+}
