@@ -9,8 +9,9 @@ body {
     border-bottom: 1px solid #5294E2;
 	box-shadow: 0 0 10px black;
     color: #7f8fa6;
+	position: absolute;
     top: 150px;
-	width: 75% ;
+	width: 75%;
 }
 
 .search:focus {
