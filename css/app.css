@@ -6,11 +6,10 @@ body {
 .search {
     background: none;
     border: none;
-    border-bottom: 1px solid #718093;
+    border-bottom: 1px solid #5294E2;
     color: #7f8fa6;
     position: absolute;
-    top: 100px;
-    left:400px;
+    top: 300px;
 }
 
 .search:focus {
