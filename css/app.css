@@ -7,7 +7,7 @@ body {
     background: none;
     border: none;
     border-bottom: 1px solid #5294E2;
-	box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px #e7e8eb;
     color: #7f8fa6;
 	position: absolute;
     top: 150px;
@@ -19,7 +19,7 @@ body {
     box-shadow: none;
     border: none;
     border-bottom: 1px solid #5294E2;
-	box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px #e7e8eb;
 }
 
 .searchicon {
