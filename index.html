@@ -1,147 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="referrer" content="origin">
-<meta name="viewport" content="width=1200">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Istok+Web&amp;subset=all">
-<title>BluMarshmallow</title>
-<link rel="stylesheet" type="text/css" href="css/site.20180921151529.css">
-<!--[if lte IE 7]>
-<link rel="stylesheet" type="text/css" href="css/site.20180921151529-lteIE7.css">
-<![endif]-->
+
+	<title>DOME</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="dome.js" defer></script>
+
+	<style type="text/css">
+		body > div#main > span > div#static_links {
+			height: 30px;
+		}
+		body > div#main > span > form > input {
+			border: none;
+			height: 50px;
+		}
+		div#links > div.section {
+			display: inline-block;
+			vertical-align: top;
+			height: 200px;
+			width: 300px;
+			margin: 2px;
+		}
+		div#links > div.section > div {
+			padding: 15px;
+		}
+		div#wiper {
+			display: block;
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			background-color: #E7E8EB;
+			opacity: 1;
+			z-index: 100;
+			transition: .5s opacity .5s, .5s z-index .5s;
+		}
+		html, body {
+			margin: 0;
+			background-color: #E7E8EB;
+		}
+	</style>
+
 </head>
-<body id="body">
-<div class="pos vis section">
-<div class="vis-2 pos-2 size cont">
-<div class="vis-2 pos-2 size-2 cont-2">
-<div class="vis-2 pos-3 size-3 cont-3">
-<div class="vis-2 pos-4 size-4 cont-4">
-<a class="button vis-3 pos-5 size-5 font" href="https://tweetdeck.twitter.com/"></a>
-</div>
-<div class="vis-2 pos-6 size-4 cont-5">
-<a class="button vis-3 pos-5 size-5 font" href="https://play.google.com/music/listen"></a>
-</div>
-<div class="vis-2 pos-7 size-4 cont-6">
-<a class="button vis-3 pos-5 size-5 font" href="https://www.youtube.com"></a>
-</div>
-<div class="vis-2 pos-8 size-6 cont-7">
-<form method="get" action="https://www.google.com/search">
-<input placeholder="Search" autocomplete="off" type="text" name="q" class="input" autofocus/>
-</div>
-</div>
-</div>
-<div class="vis-2 pos-9 size-7 cont-3">
-<div class="vis-4 pos-2 size-8 cont-8">
-<p class="para"><span class="font-2">Media</span></p>
-</div>
-<div class="vis-4 pos-10 size-8 cont-9">
-<p class="para"><span class="font-2">Social</span></p>
-</div>
-<div class="vis-4 pos-11 size-8 cont-10">
-<p class="para"><span class="font-2">Shopping</span></p>
-</div>
-<div class="vis-4 pos-12 size-8 cont-11">
-<p class="para"><span class="font-2">Personal</span></p>
-</div>
-<div class="vis-4 pos-13 size-8 cont-12">
-<p class="para"><span class="font-2">Other</span></p>
-<p class="para"><span class="font-2">&#xfeff;&ZeroWidthSpace;</span></p>
-</div>
-</div>
-<div class="vis-2 pos-14 size-9 cont-3">
-<div class="vis-2 pos-2 size-10 cont-13">
-<a class="button-2 vis-3 pos-5 size-11 font-3" href="https://blumarshmallow.deviantart.com/">Deviantart</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-14">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://reddit.com/r/steam">/r/steam</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-15">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://www.humblebundle.com/">Humble Bundle</a>
-</div>
-<div class="vis-2 pos-12 size-13 cont-16">
-<a class="button-2 vis-3 pos-5 size-12 font-5" href="https://inbox.google.com/">Mail</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-17">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://github.com/">Github</a>
-</div>
-</div>
-<div class="vis-2 pos-15 size-9 cont-3">
-<div class="vis-2 pos-2 size-10 cont-18">
-<a class="button-2 vis-3 pos-5 size-11 font-3" href="https://netflix.com/">Netflix</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-19">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://reddit.com/r/furry_irl">/r/furry_irl</a>
-</div>
-<div class="vis-2 pos-12 size-13 cont-20">
-<a class="button-2 vis-3 pos-5 size-12 font-5" href="https://smile.amazon.de/">Amazon</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-21">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://docs.google.com/spreadsheets/u/0/">G-Docks</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-22">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://www.byom.de/">Trash-mail</a>
-</div>
-</div>
-<div class="vis-2 pos-16 size-14 cont-3">
-<div class="vis-2 pos-2 size-13 cont-23">
-<a class="button-2 vis-3 pos-5 size-11 font-6" href="https://www.amazon.de/Prime-Instant-Video/b?node=3279204031&ref=DE_Prime_pmp_video&ms3_c=a3a1cf7172fcd3bc8ea17592646ba3e4"> amazn PV </a>
-</div>
-<div class="vis-2 pos-17 size-13 cont-24">
-<a class="button-2 vis-3 pos-5 size-12 font-5" href="https://reddit.com/r/windows10">/r/windows10</a>
-</div>
-<div class="vis-2 pos-11 size-10 cont-25">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://www.ebay.de/">Ebay</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-26">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://www.google.com/drive/">G-Drive</a>
-</div>
-<div class="vis-2 pos-12 size-13 cont-27">
-<a class="button-2 vis-3 pos-5 size-12 font-5" href="https://steamcommunity.com/id/TrashDump">Tradebot</a>
-</div>
-</div>
-<div class="vis-2 pos-15 size-15 cont-3">
-<div class="vis-2 pos-2 size-10 cont-28">
-<a class="button-2 vis-3 pos-5 size-11 font-3" href="https://www.twitch.tv/">Twitch</a>
-</div>
-<div class="vis-2 pos-10 size-10 cont-29">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://reddit.com/r/hackintosh">/r/hackintosh</a>
-</div>
-<div class="vis-2 pos-11 size-10 cont-30">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://paypal.com/">PayPal</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-31">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://calendar.google.com/calendar">G-Calendar</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-32">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://reddit.com/">Reddit</a>
-</div>
-</div>
-<div class="vis-2 pos-18 size-16 cont-3">
-<div class="vis-2 pos-2 size-10 cont-33">
-<a class="button-2 vis-3 pos-5 size-11 font-3" href="https://www.alienwarearena.com/">Alienware</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-34">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://web.whatsapp.com/">WhatsApp</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-35">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="https://www.blsk.de/de/home.html">BLSK</a>
-</div>
-</div>
-<div class="vis-2 pos-19 size-17 cont-3">
-<div class="vis-2 pos-2 size-10 cont-36">
-<a class="button-2 vis-3 pos-5 size-11 font-3" href="https://beatsaver.com/topdl.php">Beat Saver</a>
-</div>
-<div class="vis-2 pos-12 size-10 cont-37">
-<a class="button-2 vis-3 pos-5 size-12 font-4" href="http://store.steampowered.com/">Steam</a>
-</div>
-</div>
-</div>
-</div>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/index.20180921151529.js"></script>
-<script type="text/javascript">
-var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
-</script>
+<body onresize="matchLinks()" onunload="">
+
+	<div id="wiper"></div>
+
+	<div id="main" style="max-width: 912px;">
+		<span style="display: block">
+			<div id="static_links">
+				<span id="clock">
+					<!-- dome.js: displayDate() fills this element -->
+				</span>
+				<!-- <a href="mailto:">Compose E-Mail</a> -->
+				<a href="steam:">Steam</a>
+				<!-- <a href="https://duckduckgo.com/?q=fingers+circle+joke&iax=images&ia=images">Bank Details</a>-->
+			</div>
+			<form method="GET" id="action">
+				<input type="text" oninput="matchLinks(this.value)" autofocus autocomplete="off">
+			</form>
+			<div id="links">
+				<!-- dome.js: matchLinks() fills this element -->
+			</div>
+		</span>
+	</div>
+
 </body>
 </html>
