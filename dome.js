@@ -35,9 +35,9 @@
 var sites = {
 			"Reddit": {
 				"/r/steam"			: "https://reddit.com/r/steam",
-				"/r/furry_irl"		: "https://reddit.com/r/furry_irl",
-				"/r/windows10"		: "https://reddit.com/r/windows10",
-				"/r/hackintosh"		: "https://reddit.com/r/hackintosh",
+				"/r/furry_irl"			: "https://reddit.com/r/furry_irl",
+				"/r/windows10"			: "https://reddit.com/r/windows10",
+				"/r/hackintosh"			: "https://reddit.com/r/hackintosh",
 				"/r/de"				: "https://reddit.com/r/de",
 				"Reddit"			: "https://reddit.com",
 
@@ -56,8 +56,8 @@ var sites = {
 				"DA"				: "https://blumarshmallow.deviantart.com/",
 				"Alienware"			: "https://www.alienwarearena.com/",
 				"Twitch"			: "https://www.twitch.tv/",
-				"Google Play Music"	: "https://play.google.com/music/listen",
-				"Youtube Music"		: "https://music.youtube.com/"
+				"Google Play Music"		: "https://play.google.com/music/listen",
+				"Youtube Music"			: "https://music.youtube.com/"
 				
 				
 				
@@ -67,21 +67,21 @@ var sites = {
 				"Ebay"				: "https://www.ebay.de/",
 				"PayPal"			: "https://paypal.com/",
 				"Sparkasse"			: "https://www.blsk.de/de/home.html",
-				"Humble bundle"		: "https://www.humblebundle.com/"
+				"Humble bundle"			: "https://www.humblebundle.com/"
 				
 			},
 			"Personal": {
 				"GMail"				: "https://mail.google.com/mail/u/0/",
 				"G-Docks"			: "https://docs.google.com/spreadsheets/u/0/",
 				"G-drive"			: "https://www.google.com/drive/",
-				"G-Calendar"		: "https://calendar.google.com/calendar",
+				"G-Calendar"			: "https://calendar.google.com/calendar",
 				"Trashmail"			: "https://www.byom.de/"
 				
 			},
 			"Other": {
 				"GitHub"			: "https://github.com/",
 				"Tradebot"			: "https://steamcommunity.com/id/TrashDump",
-				""				: "google.de",
+				""				: " ",
 				""				: " "
 			}
 		};
