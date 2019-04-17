@@ -56,8 +56,7 @@ var sites = {
 				"DA"				: "https://blumarshmallow.deviantart.com/",
 				"Alienware"			: "https://www.alienwarearena.com/",
 				"Twitch"			: "https://www.twitch.tv/",
-				"Google Play Music"		: "https://play.google.com/music/listen",
-				"Youtube Music"			: "https://music.youtube.com/"
+				"Spotify"			: "https://open.spotify.com/browse/featured"
 				
 				
 				
