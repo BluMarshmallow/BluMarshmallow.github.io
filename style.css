@@ -37,6 +37,7 @@ body > div#main {
 	-moz-user-select: none;
 	user-select: none;
 	transition: .2s height;
+	filter: drop-shadow(5px 5px 5px #7b7b7b);
 }
 
 body > div#main > span > div#static_links {
