@@ -15,6 +15,7 @@ var sites = {
 				"Twitter"			: "https://twitter.com/",
 				"WhatsApp"			: "https://web.whatsapp.com/",
 				"Tweetdeck"			: "https://tweetdeck.twitter.com/",
+				"Twitter Light"			: "https://mobile.twitter.com",
 				
 			},
 			"Media": {
