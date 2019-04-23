@@ -3,12 +3,12 @@
 // div.innerHTML : {a.innerHTML : a.href}
 var sites = {
 			"Reddit": {
-				"/r/"			: "https://reddit.com",
+				"/r/"				: "https://reddit.com",
 				"/r/de"				: "https://reddit.com/r/de",				
 				"/r/steam"			: "https://reddit.com/r/steam",
-				"/r/furry_irl"		: "https://reddit.com/r/furry_irl",
-				"/r/windows10"		: "https://reddit.com/r/windows10",
-				"/r/hackintosh"		: "https://reddit.com/r/hackintosh",
+				"/r/furry_irl"			: "https://reddit.com/r/furry_irl",
+				"/r/windows10"			: "https://reddit.com/r/windows10",
+				"/r/hackintosh"			: "https://reddit.com/r/hackintosh",
 
 			},
 			"Social": {
@@ -19,7 +19,6 @@ var sites = {
 				
 			},
 			"Media": {
-				"DA"				: "https://blumarshmallow.deviantart.com/",
 				"Twitch"			: "https://www.twitch.tv/",
 				"Spotify"			: "https://open.spotify.com/browse/featured",
 				"Netflix"			: "https://netflix.com/",
@@ -32,7 +31,7 @@ var sites = {
 				"PayPal"			: "https://paypal.com/",
 				"Amazon"			: "https://smile.amazon.de/",
 				"Sparkasse"			: "https://www.blsk.de/de/home.html",
-				"Humble bundle"		: "https://www.humblebundle.com/",
+				"Humble bundle"			: "https://www.humblebundle.com/",
 				
 			},
 			"Personal": {
@@ -40,7 +39,6 @@ var sites = {
 				"G-drive"			: "https://www.google.com/drive/",
 				"G-Docks"			: "https://docs.google.com/spreadsheets/u/0/",
 				"Trashmail"			: "https://www.byom.de/",
-				"G-Calendar" 		: "https://calendar.google.com/calendar",
 
 				
 			},
@@ -52,8 +50,10 @@ var sites = {
 			}
 		};
 
-var search = "https://www.google.com/search?q=";		// The search engine
-var query  = "q";							// The query variable name for the search engine
+var search = "https://www.google.com/search?q=";                // The search engine
+var query  = "q";
+// var search = "https://www.reddit.com/r/s";		// The search engine
+// var query  = "s";							// The query variable name for the search engine
 
 var pivotmatch = 0;
 var totallinks = 0;
