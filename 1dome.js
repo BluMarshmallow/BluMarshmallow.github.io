@@ -50,7 +50,7 @@ var sites = {
 			}
 		};
 
-var search = "https://www.ecosia.com/search?q=";                // The search engine
+var search = "http://www.ecosia.com/search?q=";                // The search engine
 var query  = "q";
 // var search = "https://www.reddit.com/r/s";		// The search engine
 // var query  = "s";							// The query variable name for the search engine
