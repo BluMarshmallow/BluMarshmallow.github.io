@@ -1,71 +1,255 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-	<title>~blu~</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="1dome.js" defer></script>
-
-	<style type="text/css">
-		body > div#main > span > div#static_links {
-			height: 30px;
-		}
-		body > div#main > span > form > input {
-			border: none;
-			height: 50px;
-		}
-		div#links > div.section {
-			display: inline-block;
-			vertical-align: top;
-			height: 200px;
-			width: 300px;
-			margin: 2px;
-		}
-		div#links > div.section > div {
-			padding: 15px;
-		}
-		div#wiper {
-			display: block;
-			position: fixed;
-			width: 100vw;
-			height: 100vh;
-			background-color: #E7E8EB;
-			opacity: 1;
-			z-index: 100;
-			transition: .5s opacity .5s, .5s z-index .5s;
-		}
-		html, body {
-			margin: 0;
-			background-color: #E7E8EB;
-		}
-	</style>
-
-</head>
-<body onresize="matchLinks()" onunload="">
-
-	<div id="wiper"></div>
-
-	<div id="main" style="max-width: 912px;">
-		<span style="display: block">
-			<div id="static_links">
-				<span id="clock">
-					<!-- dome.js: displayDate() fills this element -->
-				</span>
-				<!-- <a href="mailto:">Compose E-Mail</a> -->
-				<a href="steam:">Steam</a>
-				<a href="Spotify:">Spotify</a>
-			</div>
-			<form method="GET" id="action">
-				<input type="text" oninput="matchLinks(this.value)" autofocus autocomplete="off">
-			</form>
-			<div id="links">
-				<!-- dome.js: matchLinks() fills this element -->
-			</div>
-		</span>
-	</div>
-
-</body>
+<html lang="en-GB">
+  <head>
+    <title>Blu</title>
+    <meta charset="utf-8" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css/style.css"
+      media="screen, projection"
+    />
+    <script src="./assets/js/iconify.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main id="container" class="fade">
+      <section id="header">
+        <h1 id="header-time">00:00</h1>
+        <h2 id="header-date">Date</h2>
+        <div>°ᵕ°</div>
+      </section>
+      <br />
+      <br />
+      <div id="searchBox">
+        <input
+          id="searchbar"
+          autocomplete="off"
+          type="text"
+          title="Search"
+          autofocus
+          onkeydown="search(event)"
+          placeholder="search..."
+        />
+      </div>
+      <br />
+      <section id="apps">
+        <h3>> Bookmarks</h3>
+        <div id="apps-container">
+          <a
+            class="apps-item"
+            style="--bg-hover: #ffb347"
+            href="https://smile.amazon.de/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="ant-design:amazon-circle-filled" data-inline="false"></span>
+            </div>
+            <div class="apps-text">
+              <span>Amazon</span>
+              <span>smile.amazon.de</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #ff6961"
+            href="https://www.youtube.com/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="ant-design:youtube-outlined"></span>
+            </div>
+            <div class="apps-text">
+              <span>YouTube</span>
+              <span>youtube.com</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #ffb347"
+            href="http://server:8096/"
+          >
+            <div class="apps-icon">
+              
+              <span class="iconify icon" data-icon="simple-icons:jellyfin"></span>
+            </div>
+            <div class="apps-text">
+              <span>Jellyfin</span>
+              <span>//server</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #458588"
+            href="http://server:8123/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="simple-icons:homeassistant"></span>
+            </div>
+            <div class="apps-text">
+              <span>HomeAssistant</span>
+              <span>//server</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #b19cd9"
+            href="https://www.twitch.tv/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="feather:twitch" ></span>
+            </div>
+            <div class="apps-text">
+              <span>Twitch</span>
+              <span>twitch.tv</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #458588"
+            href="https://www.fimfiction.net/"
+          >
+            <div class="apps-icon">
+              <span
+                class="iconify icon"
+                data-icon="vscode-icons:file-type-pony"
+              ></span>
+            </div>
+            <div class="apps-text">
+              <span>FimFiction</span>
+              <span>fimfiction.net</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #689d6a"
+            href="http://server:5800/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="eva:cloud-download-outline"></span>
+            </div>
+            <div class="apps-text">
+              <span>Jdownloader2</span>
+              <span>//server</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #ffb347"
+            href="http://server:8581/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="simple-icons:homebridge"></span>
+            </div>
+            <div class="apps-text">
+              <span>Homebridge</span>
+              <span>//server</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #ff6961"
+            href="https://www.patreon.com/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="ri:patreon-line"></span>
+            </div>
+            <div class="apps-text">
+              <span>Patreon</span>
+              <span>patreon.com</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #689d6a"
+            href="https://kemono.party/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="mdi:pirate"></span>
+            </div>
+            <div class="apps-text">
+              <span>Kemono</span>
+              <span>kemono.party</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #458588"
+            href="http://server:1242/"
+          >
+            <div class="apps-icon">
+              <span class="iconify" data-icon="bi:terminal"></span>
+            </div>
+            <div class="apps-text">
+              <span>ASF</span>
+              <span>//server</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #458588"
+            href="http://server:10000"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="simple-icons:webmin"></span>
+            </div>
+            <div class="apps-text">
+              <span>WebMin</span>
+              <span>//server</span>
+            </div>
+          </a>
+           <a
+            class="apps-item"
+            style="--bg-hover: #ffb347"
+            href="https://www.reddit.com/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="mdi:reddit"></span>
+            </div>
+            <div class="apps-text">
+              <span>Reddit</span>
+              <span>reddit.com</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #ffb347"
+            href="https://gitlab.perify.eu"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="bx:bxl-gitlab"></span>
+            </div>
+            <div class="apps-text">
+              <span>GitLab</span>
+              <span>gitlab.perify.eu</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #67BB71"
+            href="http://192.168.3.14:8124"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="cib:adguard"></span>
+            </div>
+            <div class="apps-text">
+              <span>AdGuard Home</span>
+              <span>//raspi</span>
+            </div>
+          </a>
+          <a
+            class="apps-item"
+            style="--bg-hover: #458588"
+            href="http://server:6595/"
+          >
+            <div class="apps-icon">
+              <span class="iconify icon" data-icon="simple-icons:deezer"></span>
+            </div>
+            <div class="apps-text">
+              <span>Deemix</span>
+              <span>//server</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+  </body>
 </html>
