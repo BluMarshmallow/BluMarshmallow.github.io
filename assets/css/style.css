@@ -1,11 +1,11 @@
 :root {
   --color-theme: #2978ad;
   /* --bg-primary: #212121; */
-  --bg-primary: #b5b0a89c;
-  --bg-secondary: #b5b0a89c;
+  --bg-primary: #7979794f;
+  --bg-secondary: #7979794f;
   --bg-hover: rgba(41, 120, 173, 0.5);
   /*--color-primary: #ebdbb2;*/
-  --color-primary: #444851;
+  --color-primary: #d3d3d3;
   --padding: 1rem;
   --rounded: 0.45rem;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
