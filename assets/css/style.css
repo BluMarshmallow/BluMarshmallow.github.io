@@ -88,10 +88,10 @@ h3 {
   background: var(--bg-secondary);
   border-radius: var(--rounded);
   transition: background-color 0.5s;
-  -webkit-backdrop-filter: blur(6px);
-  -o-backdrop-filter: blur(6px);
-  -moz-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(12px);
+  -o-backdrop-filter: blur(12px);
+  -moz-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 .apps-item:hover {
