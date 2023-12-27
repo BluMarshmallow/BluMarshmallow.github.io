@@ -1,5 +1,5 @@
 body {
-    background-color: #ABACA7;
+    background-color: #3c3352;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
     -moz-user-select: none;
@@ -27,8 +27,8 @@ body {
     min-width: 200px;
     padding: 1.5rem;
     border-radius: 10px;
-    background-color: #ABACA7;
-    box-shadow: -1rem 0 3rem #616b7e;
+    background-color: #3c3352;
+    box-shadow: -1rem 0 3rem #282236;
     transition: .2s;
 }
 .card:hover, .card:active {
