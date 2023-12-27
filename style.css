@@ -41,7 +41,7 @@ body {
     margin-left: -130px
 }
 a:visited, a:link, a:active {
-    color: #3c3352;
+    color: #eceff4;
     height: auto;
     width: auto;
     text-decoration: none;
@@ -101,7 +101,7 @@ a:hover {
 }
 input {
     color: #eceff4;
-    background-color: #ABACA7;
+    background-color: #3c3352;
     width: 700px;
     text-align: center;
     height: 50px;
