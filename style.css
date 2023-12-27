@@ -41,7 +41,7 @@ body {
     margin-left: -130px
 }
 a:visited, a:link, a:active {
-    color: #eceff4;
+    color: #3c3352;
     height: auto;
     width: auto;
     text-decoration: none;
@@ -72,19 +72,19 @@ a:hover {
 
 /*Card name styling*/
 #w {
-    color: #DF828D
+    color: #7401a1
 }
 #s {
-    color: #DF828D
+    color: #7401a1
 }
 #d {
-    color: #DF828D
+    color: #7401a1
 }
 #l {
-    color: #DF828D
+    color: #7401a1
 }
 #e {
-    color: #DF828D
+    color: #7401a1
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -116,7 +116,7 @@ input:focus::placeholder {
 button {
     width: 50px;
     height: 50px;
-    background: #ABACA7;
+    background: #3c3352;
     vertical-align: top;
     border: none;
     color: #97cdfd;
